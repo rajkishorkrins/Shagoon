@@ -30,7 +30,7 @@ const lineVariants = {
   },
 };
 
-const highlightWords = ["Aviation", "&", "Defence"];
+const highlightWords = ["Excellence", "in", " Aviation,"];
 
 const wordContainer = {
   hidden: {},
@@ -95,7 +95,12 @@ const Hero = () => {
       <motion.div
         aria-hidden
         animate={{ y: [0, 20, 0], opacity: [0.2, 0.35, 0.2] }}
-        transition={{ duration: 11, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 11,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
         className="pointer-events-none absolute bottom-10 right-1/3 h-64 w-64 rounded-full bg-primary/40 blur-3xl"
       />
 
@@ -106,7 +111,7 @@ const Hero = () => {
         animate="visible"
         className="relative mx-auto flex min-h-screen max-w-7xl items-center px-6 py-20 lg:px-8"
       >
-        <div className="max-w-3xl">
+        <div className="max-w-4xl">
           {/* Badge */}
           <motion.span
             variants={fadeUp}
@@ -115,7 +120,11 @@ const Hero = () => {
           >
             <motion.span
               animate={{ opacity: [1, 0.4, 1] }}
-              transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 1.8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
               className="h-2 w-2 rounded-full bg-white"
             />
             Trusted Since 1990
@@ -145,7 +154,7 @@ const Hero = () => {
             </motion.span>
 
             <motion.span variants={lineVariants} className="block">
-              Logistics Excellence
+              Logistics & Travel
             </motion.span>
           </h1>
 
@@ -154,10 +163,11 @@ const Hero = () => {
             variants={fadeUp}
             className="mt-8 max-w-2xl text-lg leading-8 text-white/85"
           >
-            Air Shagoon Group delivers trusted aviation and defence logistics
-            solutions across India. From air charter services and aviation
-            refueling to dangerous goods handling and ground support, we ensure
-            safe, reliable, and mission-critical operations.
+            Air Shagoon Group delivers trusted aviation, travel, defence, and
+            logistics solutions across India. From air charter services and
+            travel management to aviation refueling, dangerous goods handling,
+            and ground support, we ensure safe, reliable, and mission-critical
+            operations.
           </motion.p>
 
           {/* Buttons */}
@@ -174,7 +184,11 @@ const Hero = () => {
               <motion.span
                 className="relative"
                 animate={{ x: [0, 4, 0] }}
-                transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 1.6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               >
                 <ArrowRight size={18} />
               </motion.span>
